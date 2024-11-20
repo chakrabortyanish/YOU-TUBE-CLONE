@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUTUBE CLONE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--Fixed header-->
+    <header>
+        <nav class="flex-div">
+            <div class="left-section flex-div">
+                 <button class="menu flex-div"><img src="YouTube Projectimage/hamburger-menu.svg" alt="MenuBar"></button>
+                 <a href="#youtube" class="youtube flex-div"><img src="YouTube Projectimage/youtube-logo.svg" alt="YouTube"></a>
+            </div>
+            <div class="middle-section flex-div">
+                 <div class="search-box flex-div">
+                     <input type="text" placeholder="Search Content Here">
+                     <button class="search-text"><img src="YouTube Projectimage/search.svg" alt="SearchIcon"></button>
+                 </div>
+                 <button class="voice-search"><img src="YouTube Projectimage/voice-search-icon.svg" alt="Microphone"></button>
+            </div>
+            <div class="right-section flex-div">
+                <a class="item " href="@VideoCreater"><img src="YouTube Projectimage/upload.svg" alt="VideoCreater"></a>
+                <a class="item AppsMenu" href="@AppsMenu"><img class="d-style" src="YouTube Projectimage/youtube-apps.svg" alt="AppsMenu"></a>
+                <a class="item Notification" href="@Notification"><img class="d-style" src="YouTube Projectimage/notifications.svg" alt="Notification">
+                   <button class="flex-div">0</button>
+                </a>  
+                <a class="item My-image" href="@UserAccount"><img src="YouTube Projectimage/My-image.jpg" alt="UserAccount"></a>  
+            </div>
+         </nav>
+    </header>
+
+    <!--SideBar-->
+    <div class="sideBar">
+        <div class="shortcut">
+             <div class="links">
+                <a href="%Home" class=""><img src="YouTube Projectimage/home.svg" alt="YoutubeHome">
+                    <p>Home</p>
+                </a>
+                <a href="%explore"><img src="YouTube Projectimage/explore.svg" alt="Explore">
+                    <p>Explore</p>
+                </a>
+                <a href="%subscription"><img src="YouTube Projectimage/subscriptions.svg" alt="Subscription">
+                    <p>Subscription</p>
+                </a>
+             </div>
+        </div>
+        <div class="display-none">
+            <div class="user-histry">
+                <div class="links">
+                    <a href="$you" class="text-bold flex-div" style="justify-content: left;">You <i class="fa-solid fa-greater-than"></i></a>
+                    <a href="%Histry" class=""><img src="YouTube Projectimage/history.png" alt="History">
+                        <p>History</p>
+                    </a>
+                    <a href="%playlist"><img src="YouTube Projectimage/playlist.png" alt="Playlist">
+                        <p>Playlists</p>
+                    </a>
+                    <a href="%library"><img src="YouTube Projectimage/library.svg" alt="Library">
+                        <p>Library</p>
+                    </a>
+                    <a href="%like"><img src="YouTube Projectimage/like.png" alt="Like">
+                        <p>Liked Videos</p>
+                    </a>
+                </div>
+            </div>
+            <div class="subscribers">
+                <div class="links">
+                    <a href="$you" class="text-bold">SUBSCRIBED</a>
+                    <a href="%user1" class=""><img src="image/unnamed.jpg" alt="">
+                        <p>Code With Harry</p>
+                    </a>
+                    <a href="%user2"><img src="image/channels4_profile.jpg" alt="">
+                        <p>Sandeep</p>
+                    </a>
+                    <a href="%user3"><img src="image/channels4_profile (1).jpg" alt="">
+                        <p>Apna Collage</p>
+                    </a>
+                </div>
+            </div>
+            <div class="settings">
+                <div class="links">
+                    <a href="%Histry" class=""><i class="fa-solid fa-gear"></i>
+                        <p>Settings</p>
+                    </a>
+                    <a href="%like"><i class="fa-regular fa-flag"></i>
+                        <p>Report History</p>
+                    </a>
+                    <a href="%playlist"><i class="fa-solid fa-question" style="padding-right: 7px;"></i>
+                        <p>Help</p>
+                    </a>
+                    <a href="%library"><i class="fa-solid fa-comment-dollar"></i>
+                        <p>Send Feedback</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="video-container">
+        </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>

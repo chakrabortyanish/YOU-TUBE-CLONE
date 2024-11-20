@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    height: 55px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    padding: 0 20px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(233, 233, 233);
+    box-shadow: 0 1px 3px rgb(235, 235, 235);
+    z-index: 10;
+}
+
+.flex-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.left-section{
+    margin-right: 30px;
+}
+
+.left-section .menu{
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background: none;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.left-section .menu:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+.left-section .menu img{
+    width: 30px;
+}
+
+.left-section .youtube{
+    padding: 10px;
+}
+
+.left-section .youtube img{
+    width: 120px;
+}
+
+.middle-section{
+    flex: 1;
+    max-width: 600px;
+    height: 40px;
+}
+
+.middle-section .search-box{
+    flex: 1;
+    height: 100%;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 20px;
+}
+
+.middle-section button, .middle-section .search-box input{
+    height: 100%;
+    border: 0;
+    outline: 0;
+}
+
+.middle-section .search-box input{
+    width: 100%;
+    color: rgb(69, 69, 69);
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 18px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: transparent;
+    z-index: 2;
+}
+
+.middle-section .search-box input:focus{
+    outline: 1px solid rgb(255, 0, 0);
+}
+
+.middle-section .search-text{
+    width: 70px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+.middle-section .voice-search{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.middle-section img{
+    width: 25px;
+}
+
+.middle-section button{
+    background-color: rgb(243, 243, 243);
+}
+
+.middle-section button:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+.right-section{
+    padding-left: 60px;
+    justify-content: center;
+    gap: 6px;
+}
+
+.right-section .item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.right-section .item:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+.right-section img{
+    width: 25px;
+}
+
+.right-section .My-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.right-section .Notification{
+    position: relative;
+}
+
+.right-section .Notification button{
+    position: absolute;
+    color:aliceblue;
+    font-weight: 500;
+    padding: 0px 3px;
+    background-color: rgb(249, 51, 51);
+    border-radius: 50%;
+    top: 1px;
+    right: 6px;
+    border: 0;
+    outline: 0;
+    justify-content: center;
+}
+
+.right-section .my-acount{
+    border-radius: 0;
+    background: transparent;
+}
+
+.right-section .my-acount img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 650px) {
+
+    header, nav{
+        height: 45px;
+    }
+
+    nav{
+        padding: 0 10px;
+    }
+
+    .left-section{
+        margin-right: 6px;
+    }
+    
+    .left-section .youtube img{
+        width: 100px;
+    }
+
+    .left-section .menu img{
+        width: 25px;
+    }
+
+    .middle-section{
+        justify-content: end;
+        max-width: 100%;
+    }
+    
+    .middle-section .search-box{
+        flex: none;
+        border: none;
+        border-radius: 0;
+    }
+
+    .middle-section .search-box input{
+        display: none;
+    }
+    
+    .middle-section button{
+        background: none;
+    }
+    
+    .middle-section .search-text{
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .middle-section .voice-search{
+        margin-left: 0px;
+    }
+
+    .middle-section button:hover{
+        background-color: rgb(243, 243, 243);
+    }
+
+    .right-section .AppsMenu {
+        display: none;
+    }
+
+    .right-section{
+        padding-left: 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    nav{
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    
+    .middle-section .voice-search, .right-section .Notification{
+        display: none;
+    }
+}

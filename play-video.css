@@ -1,0 +1,383 @@
+.sideBar{
+   transform: translateX(-260px);
+}
+
+.playSideBar{
+    transform: translateX(0px);
+}
+
+.navOpty, .playContainerOpty{
+    opacity: 0.4;
+}
+
+
+.play-container{
+    width: 100%;
+}
+
+.play-container .row{
+    justify-content: center;
+    align-items:start;
+    padding: 25px;
+    padding-bottom: 0;
+}
+
+.play-container .play-video{
+    max-width: 800px;
+    padding-right: 20px;
+}
+
+.play-container .play-video .video{
+    max-width: 100%;
+}
+
+.play-container .play-video video{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.more-about .vid-title{
+    color: rgb(20, 20, 20);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 5px 0 10px 0;
+}
+
+.more-about .channel-info{
+    width: 100%;
+}
+
+.channel-info .profile{
+    justify-content: left;
+    width: 100%;
+    height: 40px;
+}
+
+.channel-info .profile .pic{
+    justify-content: left;
+    height: 100%;
+}
+
+.channel-info .profile img{
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pic .name{
+    padding: 0 20px;
+}
+
+.pic .name a{
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.profile .name p{
+    color: rgb(75, 75, 75);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.channel-info .profile button{
+    color: #fff;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(78, 78, 78);
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.channel-info button{
+    height: 100%;
+    padding: 0 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(227, 227, 227);
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.channel-info .media{
+    height: 40px;
+}
+
+.channel-info .media button{
+    color: rgb(2, 89, 25);
+}
+
+.channel-info .media img{
+    width: 22px;
+}
+
+.media .menu{
+    width: 40px;
+    padding: 0;
+    font-weight: 900;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/*  -----comment-----  */
+
+.comment-container, .comments , .reply-box{
+    width: 100%;
+}
+
+.comment-container h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(199, 19, 169);
+    margin-top: 30px;
+}
+
+.comments{
+    justify-content: left;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.comments img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.comment .gmail{
+    color: rgb(16, 16, 16);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.comment .gmail span{
+    color: #787878;
+    font-size: 0.7rem;
+    margin-left: 10px;
+}
+
+.comment .comment-box{
+    color: rgb(1, 103, 103);
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.like-dislike button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.reply-box{
+    justify-content: start;
+    gap: 30px;
+    margin-top: 5px;
+}
+
+.reply-box button{
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.reply-box button:hover{
+    background-color: #e4e4e4;
+}
+
+.reply-box .like-dislike button img{
+    width: 18px;
+    margin: 0;
+}
+
+.like-dislike span{
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #616161;
+    padding-right: 10px;
+}
+
+.reply-box .reply{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgb(80, 0, 67);
+    background: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+/* -----more-video---- */
+.play-container .row .more-video{
+}
+
+.row .more-video .playMore{
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.more-video .playMore .thumbnail{
+    width: 180px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.more-video .playMore .txt{
+    width: 200px;
+}
+
+.txt .profile{
+    justify-content: left;
+    align-items: normal;
+}
+
+.txt .profile .pic{
+    display: none;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.playMore .txt .views{
+    margin-top: 7px;
+}
+
+.more-video .playMore a{
+    color:  rgb(12, 12, 12);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.more-video .playMore p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(134, 134, 134);
+}
+
+@media only screen and (max-width: 700px) {
+
+    .play-container .row{
+        padding: 10px;
+    }
+
+    .more-about .channel-info{
+        flex-direction: column;
+    }
+
+    .channel-info .profile{
+        justify-content: space-between;
+    }
+
+    .channel-info .media{
+        width: 100%;
+        justify-content: left;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .play-container .row{
+        padding: 0%;
+    }
+
+    .play-container .row .public{
+        padding: 0 15px;
+    }
+
+    .more-about .vid-title{
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    .row .more-video .playMore{
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 20px;
+    }
+
+    .more-video .playMore .txt{
+        width: 100%;
+        padding: 10px 0px 0 15px;
+    }
+
+    .more-video .playMore .thumbnail{
+        width: 100%;
+        border-radius: 0%;
+        margin: 0;
+    }
+
+    .txt .profile{
+        margin-top: 8px;
+    }
+
+    .txt .profile .pic{
+        display: block;
+    }
+
+    .playMore .txt .views{
+        margin-top: 0px;
+    }
+
+    .pic .name a{
+        font-size: 0.9rem;
+    }
+
+    .comment-container h2{
+        font-size: 1.2rem;
+        padding: 8px 10px;
+        background-color: #ececec;
+        border-radius: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .comment-container .display-box{
+        display: none;
+    }
+
+    .comment-container .Display{
+       display: block;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+   
+    .play-container .row{
+        flex-direction: column;
+    }
+
+    .play-container .play-video{
+        max-width: 100%;
+        padding-right: 0;
+    }
+    
+    .play-container .play-video .video{
+        max-width: 600px;
+        margin: 0 auto 10px;
+    }
+
+    .play-container .play-video video{
+        border-radius: 0;
+    }
+
+    .row .more-video .playMore{
+        justify-content: left;
+    }
+
+    .play-container .row .more-video{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .more-video .playMore .txt{
+        width: auto;
+    }
+}
